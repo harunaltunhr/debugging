@@ -3,10 +3,15 @@
 function repeater(text, repeats) {
   if (typeof text !== 'string') { throw new TypeError(); }
   if (typeof repeats !== 'number') { throw new TypeError(); }
-
-  while (_) {
-
+  let i=0;
+  let result="";
+  while (i<repeats) {
+ 
+   result +=i+text+" ";
+   i++;
+   
   }
+
 
   if (typeof result !== 'string') { throw new TypeError(); }
   return result;
